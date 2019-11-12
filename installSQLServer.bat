@@ -1,0 +1,14 @@
+whoami
+
+cd C:\Users\sql_svc\Desktop\blog 2019
+
+start SQLServer2017-x64-ENU-Dev.iso
+
+timeout 5
+
+
+C:
+
+E:
+
+setup.exe /q /ACTION=Install /FEATURES=SQL /INSTANCENAME=MSSQLSERVER /SQLSVCACCOUNT=".\sql_svc" /SQLSVCPASSWORD="P@ssw0rd" /SQLSYSADMINACCOUNTS=".\sql_svc" /AGTSVCACCOUNT="NT AUTHORITY\Network Service" /SQLSVCINSTANTFILEINIT="True" /IACCEPTSQLSERVERLICENSETERMS
